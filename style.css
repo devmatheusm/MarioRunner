@@ -1,0 +1,115 @@
+html{
+    background-color: #00afff;
+    scrollbar-width: none;
+    overflow: hidden;
+}
+
+.montanha2{
+    position: absolute;
+    width: 35%;
+    bottom: 0px;
+    animation: anim-obj-2 22s infinite linear;
+}
+
+.montanha{
+    position: absolute;
+    width: 40%;
+    bottom: 50px;
+    animation: anim-obj 22s infinite linear;
+}
+
+.cano{
+    position: absolute;
+    bottom: 50px;
+    width: 60px;
+    animation: anim-obj 2s infinite linear;
+}
+
+.nuvem2{
+    position: absolute;
+    top: 20%;
+    width: 510px;
+    animation: anim-obj-2 11s infinite linear;
+}
+
+.nuvem{
+    position: absolute;
+    top: 15%;
+    width: 320px;
+    animation: anim-obj 30s infinite linear;
+}
+
+.chao{
+    background-image: url('img/tile.png');
+    height: 8%;
+    width: 150%;
+    background-size: 25px;
+    position: absolute;
+    right: -38px;
+    bottom: 0;
+    animation: chao-move 200ms linear infinite;
+}
+
+.mario{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 60px;
+}
+
+.jump{
+    animation: jump 700ms ease-out;
+}
+
+@keyframes anim-obj{
+    0%{
+        right: -570px; /* -70px */
+    }
+
+    100%{
+        right: 100%;
+    }
+}
+
+@keyframes anim-obj-2{
+    0%{
+        right: -280px; /* 240px */
+    }
+
+    100%{
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0%{
+        bottom: 50px;
+    }
+
+    40%{
+        bottom: 220px;
+    }
+
+    50%{
+        bottom: 220px;
+    }
+
+    60%{
+        bottom: 220px;
+    }
+
+    100%{
+        bottom: 50px;
+    }
+}
+
+@keyframes chao-move{
+    from{
+        right: -38px;
+    }
+
+    to{
+        
+        right: -12px;
+    }
+}
